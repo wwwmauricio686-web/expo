@@ -59,7 +59,9 @@ struct SettingsTabView: View {
     #if os(tvOS)
     .background()
     #endif
+    #if !os(macOS)
     .navigationBarHidden(true)
+    #endif
   }
 
   private var showMenuAtLaunch: some View {

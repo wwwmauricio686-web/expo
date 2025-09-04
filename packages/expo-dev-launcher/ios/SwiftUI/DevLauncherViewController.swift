@@ -1,5 +1,8 @@
+#if os(iOS) || os(tvOS)
 import UIKit
+#endif
 import SwiftUI
+import ExpoModulesCore
 
 @objc public class DevLauncherViewController: UIViewController {
   private var hostingController: UIHostingController<DevLauncherRootView>?
